@@ -16,6 +16,7 @@ function LoginOutBtn() {
   return (
     <Message
       onClick={() => {
+        // 로그인 모달창 추가
         console.log("clicked");
       }}
       text="로그인"
