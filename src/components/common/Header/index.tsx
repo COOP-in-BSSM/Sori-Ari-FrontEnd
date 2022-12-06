@@ -9,21 +9,17 @@ interface MsgProps {
 }
 
 function Message({ onClick, text }: MsgProps): JSX.Element {
-  return (
-      <_.LogInBtn onClick={onClick}>{text}</_.LogInBtn>
-  );
+  return <_.LogInBtn onClick={onClick}>{text}</_.LogInBtn>;
 }
 
 function LoginOutBtn() {
   return (
-    <>
-      <Message
-        onClick={() => {
-          console.log("clicked");
-        }}
-        text="로그인"
-      ></Message>
-    </>
+    <Message
+      onClick={() => {
+        console.log("clicked");
+      }}
+      text="로그인"
+    ></Message>
   );
 }
 
