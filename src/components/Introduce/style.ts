@@ -89,3 +89,71 @@ export const SectionMemberWrap = styled.div`
     height: 100px;
     display: flex;
 `;
+
+export const SectionServiceWrap = styled.div`
+    width: 100%;
+    height: 400px;
+    display: flex;
+    /* background-color: cyan; */
+`;
+
+export const SectionServiceContent = styled.div`
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    p{
+        margin: 0;
+    }
+`;
+
+export const SectionServiceTitle = styled.div`
+    width: 200px;
+    height: 80%;
+    font-weight: 700;
+    font-size: 27px;
+    border-right: 3px solid #FFD951;
+`;
+
+export const ServiceWrap = styled.div`
+    width: 400px;
+    height: 80%;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    &:hover{
+
+    }
+`;
+
+export const ServiceImg = styled.img`
+    margin: 20px;
+`
+
+export const ServiceExplain = styled.div`
+    width: 350px;
+    height: 60px;
+    /* background-color: crimson; */
+    margin-left: 20px;
+    /* padding-top: 10px; */
+
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+    cursor: pointer;
+    a:link{
+        text-decoration : none;
+    }
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+`;
