@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const SectionMainColor = "#994900"
+
 export const IntroduceContainer = styled.div`
     width: 100%;
     height: 900px;
@@ -37,10 +39,10 @@ export const IntroTItle = styled.div`
     }
 `;
 
-export const IntroImg = styled.div`
+export const IntroImg = styled.img`
     width: 100%;
     height: 600px;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 `;
 
 
@@ -68,7 +70,7 @@ export const SectionTitle = styled.div`
     height: 80px;
     font-weight: 700;
     font-size: 27px;
-    border-right: 3px solid #FFD951;
+    border-right: 3px solid ${SectionMainColor};
 `;
 
 export const SectionContent = styled.div`
@@ -115,7 +117,7 @@ export const SectionServiceTitle = styled.div`
     height: 80%;
     font-weight: 700;
     font-size: 27px;
-    border-right: 3px solid #FFD951;
+    border-right: 3px solid ${SectionMainColor};
 `;
 
 export const ServiceWrap = styled.div`
@@ -157,3 +159,4 @@ export const ServiceExplain = styled.div`
         font-weight: 400;
     }
 `;
+
