@@ -1,5 +1,7 @@
 import React from "react";
 import * as _ from "./style";
+import Service from "../assests/service.svg";
+import { Link } from "react-router-dom";
 
 const Introduce = () => {
   return (
@@ -35,6 +37,25 @@ const Introduce = () => {
             </_.SectionMemberWrap>
 
             {/* 현재 COOP에서 서비스 중인 것 소개하기 */}
+            <_.SectionServiceWrap>
+              <_.SectionServiceTitle>Service</_.SectionServiceTitle>
+              <_.SectionServiceContent>
+                  <_.ServiceWrap>
+                    <_.ServiceImg src={Service}/>
+                     <_.ServiceExplain>
+                      <a 
+                      href="https://gift-certificate-client.vercel.app/"
+                      style={{color : "#333"}}
+                      >
+                      협동 조합 상품권 서비스
+                      </a>
+                      <p>개발자 | 개발자 명</p>
+                    </_.ServiceExplain>
+                  </_.ServiceWrap>
+              </_.SectionServiceContent>
+            </_.SectionServiceWrap>
+
+
           </_.IntroSection>
         </_.IntroSectionWrap>
 
