@@ -12,8 +12,33 @@ const Introduce = () => {
           </_.HeaderIn>
         </_.IntroduceHeader>
         
-          {/* COOP 외부 이미지 삽입 */}
+        {/* COOP 외부 활동 이미지 삽입 */}
         <_.IntroImg></_.IntroImg>
+
+        <_.IntroSectionWrap>
+          <_.IntroSection>
+
+            <_.SectionTitleWrap>
+              <_.SectionTitle>COOP</_.SectionTitle>
+              <_.SectionContent>
+                저희 COOP는 부산 소프트웨어 마이스터 고등학교 내에서 운영되고 있는 '사회적 협동 조합'이며, 
+                <p>학생들에게 건강하고 안전한 먹거리를 제공하기위해 노력합니다.</p>
+              </_.SectionContent>
+            </_.SectionTitleWrap>
+
+            <_.SectionMemberWrap>
+              <_.SectionTitle>Member</_.SectionTitle>
+              <_.SectionContent>
+                  팀장 : 팀장명
+                  <p>팀원1 | 팀원2 | 팀원3 | 팀원4 | 팀원5 | 팀원6 | 팀원7 | 팀원8 | 팀원9</p>
+              </_.SectionContent>
+            </_.SectionMemberWrap>
+
+            {/* 현재 COOP에서 서비스 중인 것 소개하기 */}
+          </_.IntroSection>
+        </_.IntroSectionWrap>
+
+
       </_.IntroduceContainer>
     </>
   );
