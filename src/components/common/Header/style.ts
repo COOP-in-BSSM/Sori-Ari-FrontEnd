@@ -13,7 +13,9 @@ export const LogoImg = styled.img`
 `;
 
 
-export const LogInWrap = styled.div``
+export const LogInWrap = styled.div`
+margin: 0 auto;
+`
 
 export const LogInBtn = styled.button`
 width: 70px;
@@ -22,3 +24,4 @@ background-color: #fff;
 border: 1px solid #333;
 cursor: pointer;
 `
+
