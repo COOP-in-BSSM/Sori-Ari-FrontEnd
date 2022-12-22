@@ -13,14 +13,12 @@ export const IntroduceHeader = styled.div`
 export const HeaderIn = styled.div`
     width: 100%;
     height: 200px;
-    /* background-color: blueviolet; */
     margin-top: 80px;
 `;
 
 export const IntroTItle = styled.div`
     width: 800px;
     height: 150px;
-    /* background-color: aqua; */
     margin: 0 auto;
 
     font-family: 'Fredoka One';
@@ -50,13 +48,11 @@ export const IntroSectionWrap = styled.div`
     width: 100%;
     height: 200px;
     margin-top: 70px;
-    /* background-color: blueviolet; */
 `;
 
 export const IntroSection = styled.div`
     width: 1000px;
     height: 100%;
-    /* background-color: aquamarine; */
     margin: 0 auto;
 `;
 
@@ -64,14 +60,12 @@ export const SectionTitleWrap = styled.div`
     width: 100%;
     height: 100px;
     display: flex;
-    /* background-color: orange; */
 
 `;
 
 export const SectionTitle = styled.div`
     width: 200px;
     height: 80px;
-    /* background-color: blanchedalmond; */
     font-weight: 700;
     font-size: 27px;
     border-right: 3px solid #FFD951;
@@ -80,7 +74,6 @@ export const SectionTitle = styled.div`
 export const SectionContent = styled.div`
     width: 100%;
     height: 80px;
-    /* background-color: brown; */
     margin-left: 30px;
 
     font-size: 20px;
@@ -95,5 +88,4 @@ export const SectionMemberWrap = styled.div`
     width: 100%;
     height: 100px;
     display: flex;
-    /* background-color: azure; */
 `;
