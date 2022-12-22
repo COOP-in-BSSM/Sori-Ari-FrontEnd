@@ -1,7 +1,7 @@
 import React from "react";
 import * as _ from "./style";
 import Service from "../assests/service.svg";
-import { Link } from "react-router-dom";
+import IntroduceLogo from "../assests/introduce.svg";
 
 const Introduce = () => {
   return (
@@ -15,7 +15,7 @@ const Introduce = () => {
         </_.IntroduceHeader>
         
         {/* COOP 외부 활동 이미지 삽입 */}
-        <_.IntroImg></_.IntroImg>
+        <_.IntroImg src={IntroduceLogo}/>
 
         <_.IntroSectionWrap>
           <_.IntroSection>
@@ -31,7 +31,7 @@ const Introduce = () => {
             <_.SectionMemberWrap>
               <_.SectionTitle>Member</_.SectionTitle>
               <_.SectionContent>
-                  팀장 : 팀장명
+                  팀장 | 팀장명
                   <p>팀원1 | 팀원2 | 팀원3 | 팀원4 | 팀원5 | 팀원6 | 팀원7 | 팀원8 | 팀원9</p>
               </_.SectionContent>
             </_.SectionMemberWrap>
@@ -54,7 +54,6 @@ const Introduce = () => {
                   </_.ServiceWrap>
               </_.SectionServiceContent>
             </_.SectionServiceWrap>
-
 
           </_.IntroSection>
         </_.IntroSectionWrap>
