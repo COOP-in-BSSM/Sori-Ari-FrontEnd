@@ -12,7 +12,7 @@ const Introduce = () => {
           </_.HeaderIn>
         </_.IntroduceHeader>
         
-          {/* COOP 외부 활동 이미지 삽입 */}
+        {/* COOP 외부 활동 이미지 삽입 */}
         <_.IntroImg></_.IntroImg>
 
         <_.IntroSectionWrap>
@@ -34,7 +34,7 @@ const Introduce = () => {
               </_.SectionContent>
             </_.SectionMemberWrap>
 
-            
+            {/* 현재 COOP에서 서비스 중인 것 소개하기 */}
           </_.IntroSection>
         </_.IntroSectionWrap>
 
