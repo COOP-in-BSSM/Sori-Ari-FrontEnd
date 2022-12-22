@@ -1,7 +1,8 @@
-import React, { ButtonHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes, useCallback, useState } from "react";
 import * as _ from "./style";
 import Logo from "../../assests/logo.svg";
 import Nav from "../Nav";
+import Modal from "../Modal";
 
 interface MsgProps {
   text: string;
@@ -12,18 +13,38 @@ function Message({ onClick, text }: MsgProps): JSX.Element {
   return <_.LogInBtn onClick={onClick}>{text}</_.LogInBtn>;
 }
 
-function LoginOutBtn() {
-  return (
-    <Message
-      onClick={() => {
-        console.log("clicked");
-      }}
-      text="로그인"
-    ></Message>
-  );
-}
-
 const Header = () => {
+  const [isOpenModal, setOpenModal] = useState<boolean>(false);
+  const [isLogin, setIsLogin] = useState<boolean>(false);
+
+  const onClickToggleModal = useCallback(() => {
+    setOpenModal(!isOpenModal);
+  }, [isOpenModal]);
+
+  function LoginOutBtn() {
+    return (
+      <>
+        {isLogin ? (
+          <Message
+            onClick={
+              // 로그인 모달창 추가
+              onClickToggleModal
+            }
+            text="로그아웃"
+          ></Message>
+        ) : (
+          <Message
+            onClick={
+              // 로그인 모달창 추가
+              onClickToggleModal
+            }
+            text="로그인"
+          ></Message>
+        )}
+      </>
+    );
+  }
+
   return (
     <>
       <_.HeaderContainer>
@@ -33,6 +54,7 @@ const Header = () => {
           <LoginOutBtn />
         </_.LogInWrap>
       </_.HeaderContainer>
+      {isOpenModal && <Modal onClickToggleModal={onClickToggleModal}></Modal>}
     </>
   );
 };
