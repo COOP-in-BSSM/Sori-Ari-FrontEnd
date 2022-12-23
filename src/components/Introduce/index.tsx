@@ -44,7 +44,7 @@ const Introduce = () => {
                     <_.ServiceImg src={Service}/>
                      <_.ServiceExplain>
                       <a 
-                      href="https://gift-certificate-client.vercel.app/"
+                      href=""
                       style={{color : "#333"}}
                       >
                       협동 조합 상품권 서비스
