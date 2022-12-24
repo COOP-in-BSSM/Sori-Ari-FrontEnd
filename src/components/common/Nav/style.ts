@@ -16,7 +16,7 @@ export const NavMenu = styled.div`
 
 export const NavMenuText = styled(Link)`
     display: inline-block;
-    width: 100%;
+    width: 60%;
     height: 30px;
     margin-top: 25px;
     text-align: center;
@@ -26,7 +26,11 @@ export const NavMenuText = styled(Link)`
     color: #333;
     text-decoration: none;
 
-    &:focus, &:hover, &:visited, &:link, &:active {
+    &:focus, &:visited, &:link, &:active {
         text-decoration: none;
+    }
+    &:hover{
+        margin-top: 20px;
+        border-bottom: 2px solid #FFD951;
     }
 `
