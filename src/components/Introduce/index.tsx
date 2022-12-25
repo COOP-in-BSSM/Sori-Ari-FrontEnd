@@ -10,7 +10,9 @@ const Introduce = () => {
       <_.IntroduceContainer>
         <_.IntroduceHeader>
           <_.HeaderIn>
-          <_.IntroTItle>안녕하세요, 부산소프트웨어마이스터 고등학교 <div><span>사회적 협동 조합</span> <strong>COOP</strong>입니다.</div></_.IntroTItle>
+          <_.IntroTItle>
+            안녕하세요, 부산소프트웨어마이스터 고등학교 <div><span>사회적 협동 조합</span> <strong>COOP</strong>입니다.</div>
+          </_.IntroTItle>
           </_.HeaderIn>
         </_.IntroduceHeader>
         
@@ -43,12 +45,11 @@ const Introduce = () => {
                   <_.ServiceWrap>
                     <_.ServiceImg src={Service}/>
                      <_.ServiceExplain>
-                      <a 
-                      href=""
+                      <span 
                       style={{color : "#333"}}
                       >
                       협동 조합 상품권 서비스
-                      </a>
+                      </span>
                       <p>개발자 | 개발자 명</p>
                     </_.ServiceExplain>
                   </_.ServiceWrap>

@@ -35,7 +35,13 @@ export const IntroTItle = styled.div`
     }
 
     span{
-        background-color: #FFF4CE;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 0.8s;
+        background-image: linear-gradient(transparent 60%, #FFF4CE 40%);
+        &:hover{
+            background-size: 100% 100%;
+        }
     }
 `;
 
@@ -96,7 +102,6 @@ export const SectionServiceWrap = styled.div`
     width: 100%;
     height: 400px;
     display: flex;
-    /* background-color: cyan; */
 `;
 
 export const SectionServiceContent = styled.div`
@@ -126,10 +131,6 @@ export const ServiceWrap = styled.div`
     background: #FFFFFF;
     box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-
-    &:hover{
-
-    }
 `;
 
 export const ServiceImg = styled.img`
@@ -148,9 +149,6 @@ export const ServiceExplain = styled.div`
     text-align: center;
 
     cursor: pointer;
-    a:link{
-        text-decoration : none;
-    }
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
     }
